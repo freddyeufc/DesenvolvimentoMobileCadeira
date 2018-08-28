@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="174dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="52dp"
+        android:text="Num. Sorteado:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonResult"
+        app:layout_constraintEnd_toStartOf="@+id/tvResult"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewId3"
+        android:layout_width="174dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="118dp"
+        android:autoText="false"
+        android:text="Escolha um Número"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewId"
+        app:layout_constraintEnd_toStartOf="@+id/edInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:gravity="bottom"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonResult"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="151dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="107dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginStart="117dp"
+        android:text="Gerar Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edInput"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+</android.support.constraint.ConstraintLayout>
